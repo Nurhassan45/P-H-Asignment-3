@@ -1,11 +1,76 @@
 <!DOCTYPE html>
-<html lang="en">
+<html data-theme="light" lang="en ">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+    
+<link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.23/dist/full.min.css" rel="stylesheet" type="text/css" />
+<script src="https://cdn.tailwindcss.com"></script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=ADLaM+Display&display=swap" rel="stylesheet">
+<link
+    href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css"
+    rel="stylesheet"
+/>
+<style>
+    .primary-font{
+        font-family: "ADLaM Display", serif;
+    }
+    .background-add{
+        background-image:url("./c1-assets/cat-big.png") ;
+    }
+</style>
+</head>
 </head>
 <body>
     
+ 
+
+        <!-- Navbar-Start-Here -->
+        <nav class="flex  justify-between bg-[#FFF9F4] items-center px-[2vw] md:px-[4vw] lg:px-[9vw] py-8">
+            <div class="logo flex gap-2 justify-center items-center">
+                <img src="./c1-assets/logo-header.png" alt="">
+                <h1>Browse4Pets</h1>
+            </div>
+            <!-- mav-mid-section -->
+            <div class="nav-mid list-none hidden lg:inline lg:flex gap-4">
+                <li>Find a pet</li>
+                <li>Breeds</li>
+                <li>Contact us</li>
+            </div>
+            <!-- nav-last-section -->
+             <div class=" flex gap-4">
+                <i class="ri-notification-2-line hidden lg:inline"></i>
+                <i class="ri-search-line hidden lg:inline"></i>
+                <!-- Login-Button -->
+                 <button class="btn border border-[#FFDC26] hidden lg:inline"> login</button>
+                 <button class=" btn bg-[#FFDC26] hidden lg:inline">Register</button>
+                 <i class="ri-menu-line inline lg:hidden text-[#FFDC26] text-[40px]"></i>
+             </div>
+        </nav>
+     <!-- god-div -->
+
+        <div class="god mx-[2vw] md:[4vw] lg:mx-[9vw] primary-font">
+
+            <!-- Banner-Section -->
+             <div class="banner flex flex-col-reverse">
+                
+             <div class="relative mt-[160px] w-[90%] md:left-[10%] lg:left-[5%] xl:left-[20%]">
+                <img class="" src="./c1-assets/cat-big.png" alt="">
+            </div>
+                <div class="div-containt absolute top-[150px] lg:top-[300px]">
+                    <h1 class="text-3xl  lg:text-7xl font-bold ">Pamper Your Pet,<br> Because They Deserve <br> the Bes</h1>
+                    <p class=" text-[15px] lg:text-[25px] w-[90%] lg:w-[60%] text-black-300 py-4">Discover a world of treats, toys, and essentials handpicked for your furry friends. Shop now and make tails wag with joy!</p>
+                    <button class=" btn bg-[#FFDC26] text-black-300">Register</button>
+                </div>
+             
+            </div>
+              
+              
+
+        </div>
 </body>
 </html>
