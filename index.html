@@ -32,6 +32,24 @@
         border-radius: 12px;
         background: linear-gradient(134.71deg, rgb(248, 204, 251) 1.286%,rgb(172, 210, 253) 100%);
     }
+    .animation-text{
+       border-right: 5px solid;
+       width: 100%;
+       white-space:nowrap;
+       overflow: hidden;
+        animation: typing 2s steps(12),
+        cursor .4s step-end infinite alternate;
+    }
+    @keyframes  cursor {
+       50%{
+        border-color: transparent;
+       }
+    }
+    @keyframes typing {
+        from{
+            width: 0;
+        }
+    }
     /* .dogs-2{
         background: url('./c1-assets/cute-pet-mid.png');
         background-repeat: no-repeat;
@@ -50,25 +68,27 @@
         <nav class="flex  justify-between bg-[#FFF9F4] items-center px-[2vw] md:px-[4vw] lg:px-[9vw] py-8">
             <div class="logo flex gap-2 justify-center items-center">
                 <img src="./c1-assets/logo-header.png" alt="">
-                <h1>Browse4Pets</h1>
+                <h1 class="text-2xl font-bold"><span  class="text-4xl text-[#FFDC26]">B</span>rowse Pets</h1>
             </div>
             <!-- mav-mid-section -->
-            <div class="nav-mid list-none hidden lg:inline lg:flex gap-4">
+            <div class="nav-mid list-none hidden lg:inline lg:flex gap-4 text-[15px] font-bold">
                 <li>Find a pet</li>
                 <li>Breeds</li>
                 <li>Contact us</li>
             </div>
             <!-- nav-last-section -->
-             <div class=" flex gap-4">
+             <div class=" flex gap-4 items-center justify-center">
                 <i class="ri-notification-2-line hidden lg:inline"></i>
                 <i class="ri-search-line hidden lg:inline"></i>
                 <!-- Login-Button -->
-                 <button class="btn border border-[#FFDC26] hidden lg:inline"> login</button>
-                 <button class=" btn bg-[#FFDC26] hidden lg:inline">Register</button>
+                 <button class="btn border border-[#FFDC26] hidden text-black-300 lg:inline"> login</button>
+                 <button class=" btn bg-[#FFDC26] text-black-300 hidden lg:inline">Register</button>
                  <i class="ri-menu-line inline lg:hidden text-[#FFDC26] text-[40px]"></i>
              </div>
         </nav>
      <!-- god-div -->
+
+        
 
         <div class="god mx-[2vw] md:[4vw] lg:mx-[9vw] primary-font">
 
@@ -79,51 +99,52 @@
                 <img class="" src="./c1-assets/cat-big.png" alt="">
             </div>
                 <div class="div-containt absolute top-[150px] lg:top-[300px]">
-                    <h1 class="text-3xl  lg:text-7xl font-bold ">Pamper Your Pet,<br> Because They Deserve <br> the Bes</h1>
+                    <h1 class="text-3xl  lg:text-7xl font-bold inline"><span class="animation-text text-[#FFDC26]">Pamper Your Pet</span><br> Because They Deserve <br> the Bes</h1>
                     <p class=" text-[15px] lg:text-[25px] w-[90%] lg:w-[60%] text-black-300 py-4">Discover a world of treats, toys, and essentials handpicked for your furry friends. Shop now and make tails wag with joy!</p>
                     <button class=" btn bg-[#FFDC26] text-black-300">Register</button>
                 </div>
              
             </div>
               
+         
               <!-- Browse By Categories -->
             <div class="my-[2vw] lg:my-[6vw]">
                 <h1 class="text-2xl  lg:text-5xl font-bold py-4">Browse By Categories</h1>
               <div class="cards grid grid-cols-2 lg:grid-cols-6 gap-4">
                 <div class="card flex flex-col justify-center items-center bg-[#F9DF8A] p-[20px]">
                     <img class="rounded-[100%] w-[60px] h-[60px] bg-[#FFFFFF] p-[10px]" src="./c1-assets/rabbit-cartoon.png" alt="">
-                    <h1>Dog</h1>
+                    <h1>Rabbit</h1>
                     <p>3 items</p>
                 </div>
 
                 <div class="card flex flex-col justify-center items-center bg-[#F9DF8A] p-[20px]">
-                    <img class="rounded-[100%] w-[60px] h-[60px] bg-[#FFFFFF] p-[10px]" src="./c1-assets/rabbit-cartoon.png" alt="">
-                    <h1>Dog</h1>
+                    <img class="rounded-[100%] w-[60px] h-[60px] bg-[#FFFFFF] p-[10px]" src="./c1-assets/mouse-cartoon.png" alt="">
+                    <h1>Mouse</h1>
                     <p>3 items</p>
                 </div>
 
                 <div class="card flex flex-col justify-center items-center bg-[#F9DF8A] p-[20px]">
-                    <img class="rounded-[100%] w-[60px] h-[60px] bg-[#FFFFFF] p-[10px]" src="./c1-assets/rabbit-cartoon.png" alt="">
-                    <h1>Dog</h1>
-                    <p>3 items</p>
+                    <img class="rounded-[100%] w-[60px] h-[60px] bg-[#FFFFFF] p-[10px]" src="./c1-assets/cat-cartoon.png" alt="">
+                    <h1>Cat</h1>
+                    <p>2 items</p>
                 </div>
 
                
 
                 <div class="card flex flex-col justify-center items-center bg-[#F9DF8A] p-[20px]">
-                    <img class="rounded-[100%] w-[60px] h-[60px] bg-[#FFFFFF] p-[10px]" src="./c1-assets/rabbit-cartoon.png" alt="">
-                    <h1>Dog</h1>
+                    <img class="rounded-[100%] w-[60px] h-[60px] bg-[#FFFFFF] p-[10px]" src="./c1-assets/fish-cartoon.png" alt="">
+                    <h1>Fish</h1>
+                    <p>2 items</p>
+                </div>
+
+                <div class="card flex flex-col justify-center items-center bg-[#F9DF8A] p-[20px]">
+                    <img class="rounded-[100%] w-[60px] h-[60px] bg-[#FFFFFF] p-[10px]" src="./c1-assets/bird-cartoon.png" alt="">
+                    <h1>Bird</h1>
                     <p>3 items</p>
                 </div>
 
                 <div class="card flex flex-col justify-center items-center bg-[#F9DF8A] p-[20px]">
-                    <img class="rounded-[100%] w-[60px] h-[60px] bg-[#FFFFFF] p-[10px]" src="./c1-assets/rabbit-cartoon.png" alt="">
-                    <h1>Dog</h1>
-                    <p>3 items</p>
-                </div>
-
-                <div class="card flex flex-col justify-center items-center bg-[#F9DF8A] p-[20px]">
-                    <img class="rounded-[100%] w-[60px] h-[60px] bg-[#FFFFFF] p-[10px]" src="./c1-assets/rabbit-cartoon.png" alt="">
+                    <img class="rounded-[100%] w-[60px] h-[60px] bg-[#FFFFFF] p-[10px]" src="./c1-assets/dog-cartoon.png" alt="">
                     <h1>Dog</h1>
                     <p>3 items</p>
                 </div>
@@ -263,25 +284,63 @@
             </section>
 
             <!-- Everyday low Price -->
-             <section>
+             <section class="mb-[350px] ">
                 <h1 class="text-2xl  lg:text-5xl font-bold py-4">Everyday low Price</h1>
                  
-                <div class="cards flex flex-col lg:flex-row gap-4 justify-center m-4 lg:m-12 items-center">
-                    <div class="dogs-1 w-[80%] md:w-[38%]  h-[300px] flex justify-center items-center">
-                        <div class="img-des m-12 w-[100%] md:w-[53%] leading-[20px]">
+                <div class="cards bg-[#fff9f4] py-4 md:py-[150px] md:px-[100px] flex flex-col lg:flex-row gap-4 justify-center m-4 lg:m-12 items-center">
+                    <div class="dogs-1 w-[90%] md:w-[38%]  h-[300px] flex justify-center items-center">
+                        <div class="img-des m-12 w-[53%0%] md:w-[53%] leading-[20px]">
                             <p class="text-[10px] hidden md:inline">Under Price</p>
                             <h1 class="text-2xl font-bold">Pet Grooming Mitt</h1>
                             <h1 class="text-white text-[12px]  hidden md:inline">(Easy Hair Removal)</h1>
                             <h1 class="text-2xl font-bold text-white md:text-black" >$7.99</h1>
                         </div>
-                        <img class="w-[45%] lg:w-[45%] " src="./c1-assets/cute-dog-mid.png" alt="">
+                        <img class="w-[50%] lg:w-[45%] mr-8 " src="./c1-assets/cute-dog-mid.png" alt="">
                     </div>
-                    <div class="dog-card w-[80%] mx-auto lg:mx-[0px] md:w-[90%] lg:w-[25%] h-[300px] bg-[#f9df8a] p-8 rounded-[20px]">
+                    <div class="dog-card w-[90%] mx-auto lg:mx-[0px] md:w-[90%] lg:w-[25%] h-[300px] bg-[#f9df8a] p-8 rounded-[20px]">
                         <h1 class="text-2xl font-bold">T-Shirt For Dogs</h1>
-                        <h1 class="text-2xl font-bold text-[rgb(255, 220, 38)]">$7.99</h1>
+                        <h1 class="text-2xl font-bold text-gold">$7.99</h1>
                     </div>
                 </div>
              </section>
+             
         </div>
+
+        <footer class="bg-[#ffed93] pb-[100px]">
+            <!-- Card-Section -->
+            <div class="flex relative  rounded top-[-200px] flex-col md:flex-row justify-center items-center py-8 bg-[#fff9f4] mx-[2vw] md:[4vw] lg:mx-[9vw] primary-font">
+                <div class="img-div w-full mx-auto md:w-[40%] md:ml-[150px]">
+                <img class="w-[300px] h-[400px]md:w-[450px] h-[450px]  mx-auto" src="./c1-assets/cute-pet-small.png" alt="">
+
+                </div>
+                <div class="right w-[60%] flex flex-col gap-2 text-center md:text-start">
+                    <h1 class="text-2xl font-bold">Get Pawsome News!</h1>
+                    <p class="text-[15px]">Exclusive training tips, ticks, product deals and more.</p>
+                    <input type="email" name="" id="" placeholder="Enter Your Email...">
+                    <span><button class="btn bg-[#FFDC26] text-black-300">Subscribe</button></span>
+                </div>
+             </div>
+
+             <div class="main-footer flex flex-col md:flex-row gap-4 justify-between mx-[2vw] md:[4vw] lg:mx-[9vw] primary-font">
+                <div class="first-div">
+                    <img class="inline" src="./c1-assets/logo-footer.png" alt=""><span class="text-2xl font-bold ml-[2px]">Browse Pets</span>
+                    <p>Discover a world of treats, toys, and essentials handpicked for your furry friends</p>
+                </div>
+                <div class="secend-div list-none">
+                    <li>Find a pet</li>
+                    <li>Breeds</li>
+                    <li>Contact Us</li>
+                </div>
+                <div class="thered-div">
+                    <h1>Follow Us</h1>
+                    <div class="icon flex gap-2">
+                        <i class="ri-facebook-circle-fill"></i>
+                        <i class="ri-instagram-fill"></i>
+                        <i class="ri-youtube-fill"></i>
+                        <i class="ri-telegram-2-fill"></i>
+                    </div>
+                </div>
+             </div>
+        </footer>
 </body>
 </html>
